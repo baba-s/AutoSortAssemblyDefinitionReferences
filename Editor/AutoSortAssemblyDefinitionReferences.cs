@@ -52,8 +52,10 @@ namespace Kogane.Internal
                 var newReferences = oldReferences
                         .Select( x => x.Replace( "GUID:", "" ) )
                         .Select( x => AssetDatabase.GUIDToAssetPath( x ) )
+                        .Where( x => !string.IsNullOrWhiteSpace( x ) )
                         .OrderBy( x => Path.GetFileName( x ), new NaturalComparer() )
                         .Select( x => AssetDatabase.AssetPathToGUID( x ) )
+                        .Where( x => !string.IsNullOrWhiteSpace( x ) )
                         .Select( x => "GUID:" + x )
                         .ToArray()
                     ;

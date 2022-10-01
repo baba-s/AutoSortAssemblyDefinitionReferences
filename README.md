@@ -11,7 +11,7 @@ References がファイル名順に自動でソートされます
 
 ## 設定
 
-![2022-10-01_103248](https://user-images.githubusercontent.com/6134875/193378044-ec08b42a-5dd8-4b5a-b505-605ded8b3592.png)
+![2022-10-01_105012](https://user-images.githubusercontent.com/6134875/193378440-e79c5e0a-db4e-4b43-afa3-2a3e38132882.png)
 
 Project Settings の「Exclude Array」に指定されたフォルダに含まれている  
 AssemblyDefinitionAsset は無視されます

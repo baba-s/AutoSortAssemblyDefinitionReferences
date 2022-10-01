@@ -37,8 +37,6 @@ namespace Kogane.Internal
             {
                 AssemblyDefinitionReferencesSorter.Sort( assetPath );
             }
-
-            AssetDatabase.Refresh();
         }
 
         private static bool IsExclude( string assetPath )

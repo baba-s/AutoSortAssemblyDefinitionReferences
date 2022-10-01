@@ -1,10 +1,8 @@
-﻿{
+{
     "name": "Kogane.AutoSortAssemblyDefinitionReferences",
     "rootNamespace": "",
     "references": [
-        "GUID:eaa0b1a7b16f0f544821f7be4da30c1f",
-        "GUID:f79b208da70018b4e99cfff6da005587",
-        "GUID:7686910f9aa31418e9aa092e8e47a655"
+        "GUID:eaa0b1a7b16f0f544821f7be4da30c1f"
     ],
     "includePlatforms": [
         "Editor"

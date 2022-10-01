@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEditorInternal;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Kogane.Internal
 {
     [FilePath( "ProjectSettings/Kogane/AutoSortAssemblyDefinitionReferences.asset", FilePathAttribute.Location.ProjectFolder )]
     internal sealed class AutoSortAssemblyDefinitionReferencesSetting : ScriptableSingleton<AutoSortAssemblyDefinitionReferencesSetting>
     {
-        [SerializeField] private AssemblyDefinitionAsset[] m_excludeArray = Array.Empty<AssemblyDefinitionAsset>();
+        [SerializeField] private Object[] m_excludeArray = Array.Empty<Object>();
 
-        public IReadOnlyList<AssemblyDefinitionAsset> ExcludeList => m_excludeArray;
+        public IReadOnlyList<Object> ExcludeList => m_excludeArray;
 
         public void Save()
         {

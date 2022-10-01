@@ -17,6 +17,8 @@ namespace Kogane.Internal
             string[] movedFromAssetPaths
         )
         {
+            if ( !AutoSortAssemblyDefinitionReferencesSetting.instance.IsEnable ) return;
+
             const string extension = ".asmdef";
 
             if ( !importedAssets.Any( x => x.EndsWith( extension ) ) ) return;
@@ -37,6 +39,8 @@ namespace Kogane.Internal
             {
                 AssemblyDefinitionReferencesSorter.Sort( assetPath );
             }
+
+            AssetDatabase.Refresh();
         }
 
         private static bool IsExclude( string assetPath )

@@ -6,10 +6,10 @@ using Object = UnityEngine.Object;
 
 namespace Kogane.Internal
 {
-    [FilePath( "ProjectSettings/Kogane/AutoSortAssemblyDefinitionReferences.asset", FilePathAttribute.Location.ProjectFolder )]
+    [FilePath( "UserSettings/Kogane/AutoSortAssemblyDefinitionReferencesSetting.asset", FilePathAttribute.Location.ProjectFolder )]
     internal sealed class AutoSortAssemblyDefinitionReferencesSetting : ScriptableSingleton<AutoSortAssemblyDefinitionReferencesSetting>
     {
-        [SerializeField] private bool     m_isEnable     = true;
+        [SerializeField] private bool     m_isEnable;
         [SerializeField] private Object[] m_excludeArray = Array.Empty<Object>();
 
         public bool                  IsEnable    => m_isEnable;
